@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Rubik", sans-serif;
+  color: whitesmoke;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 768px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: rgb(50, 50, 50);
+}
+
+/* .center {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
