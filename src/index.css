@@ -2,25 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link-primary {
+    @apply bg-amber-600 text-white rounded-lg hover:bg-amber-800 transition-colors
+  }
+
+}
+
 * {
   font-family: "Rubik", sans-serif;
   color: whitesmoke;
+  font-size: 18px;
 }
 
 body {
-  display: flex;
-  justify-content: center;
   padding: 10px;
   width: 768px;
   margin: 0 auto;
   min-height: 100vh;
   background-color: rgb(50, 50, 50);
+  box-sizing: border-box;
 }
 
-/* .center {
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
