@@ -8,12 +8,12 @@ export default function NavBar() {
     <div className="flex justify-between w-full py-3 items-center">
       {isLoggedIn
         ? publicLinks.map((link: ILink) => (
-            <Link key={link.name} to={link.path}>
+            <Link key={link.name} to={link.path} className="hover:scale-95 transition-transform">
               {link.name}
             </Link>
           ))
         : privateLinks.map((link: ILink) => (
-            <Link key={link.name} to={link.path}>
+            <Link key={link.name} to={link.path} className="hover:scale-95 transition-transform">
               {link.name}
             </Link>
           ))}

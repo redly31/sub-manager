@@ -9,6 +9,11 @@
 
 }
 
+span {
+  font-size: inherit;
+  text-decoration: underline #d97706 dashed;
+}
+
 * {
   font-family: "Rubik", sans-serif;
   color: whitesmoke;
@@ -17,7 +22,7 @@
 
 body {
   padding: 10px;
-  width: 768px;
+  max-width: 768px;
   margin: 0 auto;
   min-height: 100vh;
   background-color: rgb(50, 50, 50);
