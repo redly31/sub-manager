@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { StrictMode, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   createBrowserRouter,
@@ -12,6 +12,9 @@ import NotFound from './pages/NotFoundPage';
 import ProfilePage from './pages/ProfilePage';
 import StarterPage from './pages/StarterPage';
 import { IRoute } from './models/IRoute';
+import { Provider } from 'react-redux';
+import { store } from './store';
+import { useAppSelector } from './hooks/redux';
 
 enum Routes {
   HOME = '/',
@@ -19,32 +22,38 @@ enum Routes {
   LOGIN = '/login',
 }
 
-const isLoggedIn = false;
+const RootComponent = () => {
+  const isAuth = useAppSelector(state => state.auth.isAuth);
 
-export const publicRoutes: IRoute[] = [
-  { path: Routes.HOME, element: <StarterPage /> },
-  { path: Routes.LOGIN, element: <LoginPage /> },
-]
+  const publicRoutes: IRoute[] = [
+    { path: Routes.HOME, element: <StarterPage /> },
+    { path: Routes.LOGIN, element: <LoginPage /> },
+  ];
 
-export const privateRoutes: IRoute[] = [
-  { path: Routes.HOME, element: <HomePage /> },
-  { path: Routes.PROFILE, element: <ProfilePage /> },
-]
+  const privateRoutes: IRoute[] = [
+    { path: Routes.HOME, element: <HomePage /> },
+    { path: Routes.PROFILE, element: <ProfilePage /> },
+  ];
 
-const routes = [
-  {
-    path: Routes.HOME,
-    element: <App />,
-    errorElement: <NotFound />,
-    children: isLoggedIn ? privateRoutes : publicRoutes
-  },
-  { path: '*', element: <NotFound /> },
-];
+  const routes = [
+    {
+      path: Routes.HOME,
+      element: <App />,
+      errorElement: <NotFound />,
+      children: isAuth ? privateRoutes : publicRoutes
+    },
+    { path: '*', element: <NotFound /> },
+  ];
 
-const router = createBrowserRouter(routes);
+  const router = createBrowserRouter(routes);
+
+  return <RouterProvider router={router} />;
+};
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RootComponent />
+    </Provider>
   </StrictMode>
 );

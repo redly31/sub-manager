@@ -1,21 +1,22 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { publicLinks, privateLinks } from "./constants/privateLinks";
 import { ILink } from "../../models/ILink";
+import { useAppSelector } from "../../hooks/redux";
 
 export default function NavBar() {
-  const isLoggedIn = false;
+  const isAuth = useAppSelector(state => state.auth.isAuth);
   return (
     <div className="flex justify-between w-full py-3 items-center">
-      {isLoggedIn
+      {isAuth
         ? publicLinks.map((link: ILink) => (
-            <Link key={link.name} to={link.path} className="hover:scale-95 transition-transform">
+            <NavLink key={link.name} to={link.path} className="hover:scale-95 transition-transform">
               {link.name}
-            </Link>
+            </NavLink>
           ))
         : privateLinks.map((link: ILink) => (
-            <Link key={link.name} to={link.path} className="hover:scale-95 transition-transform">
+            <NavLink key={link.name} to={link.path} className="hover:scale-95 transition-transform">
               {link.name}
-            </Link>
+            </NavLink>
           ))}
     </div>
   );
