@@ -15,11 +15,13 @@ import { IRoute } from './models/IRoute';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import { useAppSelector } from './hooks/redux';
+import RegistrationPage from './pages/RegistrationPage';
 
 enum Routes {
   HOME = '/',
   PROFILE = '/profile',
   LOGIN = '/login',
+  REGISTRATION = '/registration',
 }
 
 const RootComponent = () => {
@@ -28,6 +30,7 @@ const RootComponent = () => {
   const publicRoutes: IRoute[] = [
     { path: Routes.HOME, element: <StarterPage /> },
     { path: Routes.LOGIN, element: <LoginPage /> },
+    { path: Routes.REGISTRATION, element: <RegistrationPage /> },
   ];
 
   const privateRoutes: IRoute[] = [

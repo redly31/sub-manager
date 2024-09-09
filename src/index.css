@@ -6,6 +6,9 @@
   .link-primary {
     @apply bg-amber-600 text-white rounded-lg hover:bg-amber-800 transition-colors
   }
+  .input-secondary {
+    @apply text-black py-2 px-3 w-72 rounded-lg
+  }
 }
 
 .active {
@@ -19,7 +22,7 @@ span {
 
 * {
   font-family: "Rubik", sans-serif;
-  color: whitesmoke;
+  color: white;
   font-size: 18px;
 }
 
@@ -43,8 +46,12 @@ h2 {
 }
 
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 300px;
+}
+
+input {
+  outline: none;
 }
