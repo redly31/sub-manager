@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const authSlice = createSlice({
-    name: 'pizzaInCart',
+    name: 'auth',
     initialState: {
-        isAuth: false as boolean,
+        isAuth: true as boolean,
     },
     reducers: {
         logIn(state) {

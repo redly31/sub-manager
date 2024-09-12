@@ -1,0 +1,43 @@
+{
+  "subs": [
+    {
+      "name": "ВК Музыка",
+      "icon": "https://avatars.mds.yandex.net/i?id=69fe99298a0de82f40eb8521ba3b6ca008097064-4078520-images-thumbs&n=13",
+      "cost": 169,
+      "period": 1,
+      "id": "1",
+      "created_at": 1726151009256
+    },
+    {
+      "name": "Кинопоиск",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/c/ce/КиноПоиск.jpg",
+      "cost": 1,
+      "period": 2,
+      "id": "2",
+      "created_at": 1726151000132
+    },
+    {
+      "id": "p8fP4FdIK6hrW5eLWoTKD",
+      "name": "ИВИ",
+      "cost": 149,
+      "period": 1,
+      "icon": "https://sun6-22.userapi.com/s/v1/ig2/SQmDWJ4s4Gou0Xg6xlRHGsOBihXJl2iYLv-RPeqA4FiB5ZKt9T_3_wuVBoGQwBHStD89YC_DTnhR9b9x5EZw33jj.jpg?size=1080x1080&quality=95&crop=0,0,1080,1080&ava=1",
+      "created_at": 1726152948632
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

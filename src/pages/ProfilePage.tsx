@@ -14,7 +14,8 @@ export default function ProfilePage() {
 
   return (
     <div>
-      <button className="link-primary py-2 px-5" onClick={() => handleLogOut()}>Выйти</button>
+      <h1>Профиль</h1>
+      <button className="link-primary py-2 px-5 mt-3" onClick={() => handleLogOut()}>Выйти</button>
     </div>
   )
 }

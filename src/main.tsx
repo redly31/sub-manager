@@ -1,4 +1,4 @@
-import { StrictMode, useEffect, useState } from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   createBrowserRouter,
@@ -16,12 +16,14 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import { useAppSelector } from './hooks/redux';
 import RegistrationPage from './pages/RegistrationPage';
+import NewSubPage from './pages/NewSubPage/NewSubPage';
 
 enum Routes {
   HOME = '/',
   PROFILE = '/profile',
   LOGIN = '/login',
   REGISTRATION = '/registration',
+  NEW = '/new',
 }
 
 const RootComponent = () => {
@@ -36,6 +38,7 @@ const RootComponent = () => {
   const privateRoutes: IRoute[] = [
     { path: Routes.HOME, element: <HomePage /> },
     { path: Routes.PROFILE, element: <ProfilePage /> },
+    { path: Routes.NEW, element: <NewSubPage /> }
   ];
 
   const routes = [
