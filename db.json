@@ -1,28 +1,44 @@
 {
   "subs": [
     {
+      "id": "1vbkQwtJ0KTvUh6xly3p6",
+      "name": "Уфанет",
+      "cost": 825,
+      "period": 1,
+      "icon": "",
+      "created_at": 1726288496930
+    },
+    {
+      "id": "oRX3eykdg0EpXhXa0pKni",
+      "name": "Мегафон",
+      "cost": 570,
+      "period": 1,
+      "icon": "",
+      "created_at": 1726288551472
+    },
+    {
+      "id": "OvJHmr0-FgiCqAo9u-n3w",
       "name": "ВК Музыка",
-      "icon": "https://avatars.mds.yandex.net/i?id=69fe99298a0de82f40eb8521ba3b6ca008097064-4078520-images-thumbs&n=13",
-      "cost": 169,
+      "cost": 159,
       "period": 1,
-      "id": "1",
-      "created_at": 1726151009256
+      "icon": "",
+      "created_at": 1726288592649
     },
     {
-      "name": "Кинопоиск",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/c/ce/КиноПоиск.jpg",
-      "cost": 1,
-      "period": 2,
-      "id": "2",
-      "created_at": 1726151000132
+      "id": "sePAMxewVSqb1JinEFkxK",
+      "name": "Телеграм Премиум",
+      "cost": 299,
+      "period": 1,
+      "icon": "",
+      "created_at": 1726299448595
     },
     {
-      "id": "p8fP4FdIK6hrW5eLWoTKD",
-      "name": "ИВИ",
-      "cost": 149,
+      "id": "sePAMx5ySGhtinEFkxK",
+      "name": "Яндекс плюс",
+      "cost": 399,
       "period": 1,
-      "icon": "https://sun6-22.userapi.com/s/v1/ig2/SQmDWJ4s4Gou0Xg6xlRHGsOBihXJl2iYLv-RPeqA4FiB5ZKt9T_3_wuVBoGQwBHStD89YC_DTnhR9b9x5EZw33jj.jpg?size=1080x1080&quality=95&crop=0,0,1080,1080&ava=1",
-      "created_at": 1726152948632
+      "icon": "",
+      "created_at": 1726130393000
     }
   ],
   "comments": [

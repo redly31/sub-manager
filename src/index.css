@@ -14,10 +14,6 @@
   }
 }
 
-.active {
-  @apply scale-95 
-}
-
 .bg-secondary {
   background-color: rgb(70, 70, 70);
 }
