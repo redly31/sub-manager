@@ -6,6 +6,7 @@
       "cost": 825,
       "period": 1,
       "icon": "",
+      "activation_date": 1725908400006,
       "created_at": 1726288496930
     },
     {
@@ -14,6 +15,7 @@
       "cost": 570,
       "period": 1,
       "icon": "",
+      "activation_date": 1725908400005,
       "created_at": 1726288551472
     },
     {
@@ -21,7 +23,8 @@
       "name": "ВК Музыка",
       "cost": 159,
       "period": 1,
-      "icon": "",
+      "icon": "https://st4.styapokupayu.ru/ckeditor_assets/pictures/000/531/521_content.png",
+      "activation_date": 1725908400004,
       "created_at": 1726288592649
     },
     {
@@ -30,6 +33,7 @@
       "cost": 299,
       "period": 1,
       "icon": "",
+      "activation_date": 1725908400003,
       "created_at": 1726299448595
     },
     {
@@ -38,7 +42,35 @@
       "cost": 399,
       "period": 1,
       "icon": "",
+      "activation_date": 1725908400002,
       "created_at": 1726130393000
+    },
+    {
+      "id": "tqzTEFD63hU5r9lXj8qk4",
+      "name": "Penis",
+      "cost": 149,
+      "period": 2,
+      "icon": "",
+      "activation_date": 1725908400001,
+      "created_at": 1726384047624
+    },
+    {
+      "id": "JEeYR9YVu9YnvO2aMkhIR",
+      "name": "Penis 2",
+      "cost": 149,
+      "period": 1,
+      "icon": "",
+      "activation_date": 1726340400000,
+      "created_at": 1726409892667
+    },
+    {
+      "id": "oXoa8vnc__q7lP-_tukpn",
+      "name": "Penis 3",
+      "cost": 269,
+      "period": 2,
+      "icon": "",
+      "activation_date": 1726254000000,
+      "created_at": 1726409988494
     }
   ],
   "comments": [

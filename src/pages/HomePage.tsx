@@ -16,7 +16,7 @@ export default function HomePage() {
     return <Loader />;
   }
   const totalCost = subs.reduce((acc, item) => acc + item.cost, 0);
-
+  console.log(subs)
   return (
     <div>
       <h1>Статистика</h1>

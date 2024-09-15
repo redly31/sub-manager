@@ -39,9 +39,16 @@ export default function SubBar(props: SubBarProps) {
 
         <button
           className="link-primary py-2 px-5"
-          onClick={() => handleSortClick('created_at')}
+          onClick={() => handleSortClick('activation_date')}
         >
-          Дате добавления
+          Дате активации
+        </button>
+
+        <button
+          className="link-primary py-2 px-5"
+          onClick={() => handleSortClick('period')}
+        >
+          Длительности
         </button>
       </div>
 

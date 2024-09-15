@@ -5,9 +5,10 @@ export const inputs: Input[] = [
     { name: "cost", placeholder: "Стоимость", required: true, id: 2 },
     {
       name: "period",
-      placeholder: "Период (месяц, год)",
+      placeholder: "Длительность подписки (в месяцах)",
       required: true,
       id: 3,
     },
-    { name: "icon", placeholder: "Иконка подписки", required: false, id: 4 },
+    { name: "icon", placeholder: "Ссылка на иконку подписки (необязательно)", required: false, id: 4 },
+    { name: "activation_date", placeholder: "Дата активации подписки (дд.мм.гг)", required: false, id: 5 },
 ];

@@ -3,8 +3,9 @@ import { nanoid } from "nanoid";
 import { ISub } from "../../models/ISub";
 import { useAddSubMutation } from "../../store/api/subsApi";
 import { inputs } from "./constants/inputs";
+import { parse } from 'date-fns';
 
-type FormData = Omit<ISub, "id" | "created_at">;
+type FormData = Omit<ISub, "id" | "created_at" | "activation_date"> & { activation_date: string };
 
 export interface Input {
   name: keyof FormData;
@@ -18,10 +19,14 @@ export default function NewSubPage() {
   const [addSub] = useAddSubMutation();
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
+    const parsedDate = parse(data.activation_date, 'dd.MM.yy', new Date());
+    const timestamp = parsedDate.getTime();
+
     const sub = {
       ...data,
       period: Number(data.period),
       cost: Number(data.cost),
+      activation_date: timestamp,
       id: nanoid(),
       created_at: Date.now(),
     };
