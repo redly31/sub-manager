@@ -1,5 +1,5 @@
 // themeSlice.js
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { updateThemeColor } from '../../helpers/updateThemeColor';
 import { IColor } from '../../models/ITheme';
 
@@ -12,7 +12,7 @@ const themeSlice = createSlice({
     cssColorHover: '#92400e',
   } as IColor,
   reducers: {
-    setThemeColor: (state, action) => {
+    setThemeColor: (state, action: PayloadAction<IColor>) => {
       state.tailwindColor = action.payload.tailwindColor;
       state.cssColor = action.payload.cssColor;
       state.tailwindColorHover = action.payload.tailwindColorHover;

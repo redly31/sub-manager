@@ -56,7 +56,10 @@ const RootComponent = () => {
   return <RouterProvider router={router} />;
 };
 
-createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root');
+const root = createRoot(container!);
+
+root.render(
   <StrictMode>
     <Provider store={store}>
       <RootComponent />

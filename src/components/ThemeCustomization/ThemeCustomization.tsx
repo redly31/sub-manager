@@ -5,11 +5,9 @@ import { colorMap } from "./constants/colorMap";
 
 export default function ThemeCustomization() {
   const dispatch = useAppDispatch();
-
   const handleColorChange = (color: IColor) => {
     dispatch(setThemeColor(color));
   };
-
   return (
     <div className="mt-3">
       <h2>Темы</h2>
