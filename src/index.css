@@ -2,31 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --theme-color: #d97706; /* Цвет amber-600 */
+  --theme-color-hover: #92400e; /* Цвет amber-800 */
+}
+
 @layer components {
   .link-primary {
-    @apply bg-amber-600 text-white rounded-lg hover:bg-amber-800 transition-colors
+    @apply bg-theme-color text-white rounded-lg hover:bg-theme-color-hover transition-colors
   }
   .input-secondary {
     @apply text-black py-2 px-3 w-72 rounded-lg
   }
   .button-primary {
-    @apply bg-amber-600 text-white rounded-lg hover:bg-amber-800 transition-colors
+    @apply bg-theme-color text-white rounded-lg hover:bg-theme-color-hover transition-colors
   }
-}
-
-.bg-secondary {
-  background-color: rgb(70, 70, 70);
 }
 
 span {
   font-size: inherit;
-  text-decoration: underline #d97706 dashed;
+  text-decoration: underline var(--theme-color) dashed;
 }
 
 * {
   font-family: "Rubik", sans-serif;
   color: white;
   font-size: 18px;
+  outline: none;
 }
 
 body {
@@ -55,6 +57,3 @@ h2 {
   margin-top: 300px;
 }
 
-input {
-  outline: none;
-}

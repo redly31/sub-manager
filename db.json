@@ -71,6 +71,33 @@
       "icon": "",
       "activation_date": 1726254000000,
       "created_at": 1726409988494
+    },
+    {
+      "id": "6llZQcbTHEMqSKyk6qah8",
+      "name": "Avast Антивирус",
+      "cost": 599,
+      "period": 1,
+      "icon": "https://www.softmagazin.ru/upload/iblock/c57/c57cdb4c41ccd662b0fb8e540ddd5dfb.png",
+      "activation_date": 1725822000000,
+      "created_at": 1726480289427
+    },
+    {
+      "id": "Y3OpjdgElJq3IV_WiPogh",
+      "name": "ESET Антивирус",
+      "cost": 999,
+      "period": 3,
+      "icon": "https://allsks.ru/upload/iblock/0af/4q6dh3th9o5c1kehcb04rovyu3vgbai4.jpeg",
+      "activation_date": 1726081200000,
+      "created_at": 1726480744456
+    },
+    {
+      "id": "azCKlGWO5y5WOrremrGyy",
+      "name": "Каспарян",
+      "cost": 149,
+      "period": 3,
+      "icon": "",
+      "activation_date": 1725649200000,
+      "created_at": 1726481238668
     }
   ],
   "comments": [
