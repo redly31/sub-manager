@@ -17,6 +17,8 @@ import { store } from './store';
 import { useAppSelector } from './hooks/redux';
 import RegistrationPage from './pages/RegistrationPage';
 import NewSubPage from './pages/NewSubPage/NewSubPage';
+import SubPage from './pages/SubPage';
+import EditSubPage from './pages/EditSubPage';
 
 enum Routes {
   HOME = '/',
@@ -24,6 +26,8 @@ enum Routes {
   LOGIN = '/login',
   REGISTRATION = '/registration',
   NEW = '/new',
+  SUB_PAGE = '/:id',
+  SUB_PAGE_EDIT = '/:id/edit',
 }
 
 const RootComponent = () => {
@@ -38,7 +42,9 @@ const RootComponent = () => {
   const privateRoutes: IRoute[] = [
     { path: Routes.HOME, element: <HomePage /> },
     { path: Routes.PROFILE, element: <ProfilePage /> },
-    { path: Routes.NEW, element: <NewSubPage /> }
+    { path: Routes.NEW, element: <NewSubPage /> },
+    { path: Routes.SUB_PAGE, element: <SubPage /> },
+    { path: Routes.SUB_PAGE_EDIT, element: <EditSubPage /> },
   ];
 
   const routes = [

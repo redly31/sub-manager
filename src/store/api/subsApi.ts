@@ -34,7 +34,15 @@ export const subsApi = createApi({
       }),
       invalidatesTags: [{ type: "Subs", id: "LIST" }],
     }),
+    updateSub: build.mutation<ISub, { newSub: ISub; id: string }>({
+      query: ({ newSub, id }) => ({
+        url: `subs/${id}`,
+        method: "PATCH",
+        body: newSub,
+      }),
+      invalidatesTags: [{ type: "Subs", id: "LIST" }],
+    }),
   }),
 });
 
-export const { useGetSubsQuery, useAddSubMutation, useDeleteSubMutation } = subsApi;
+export const { useGetSubsQuery, useAddSubMutation, useDeleteSubMutation, useUpdateSubMutation } = subsApi;

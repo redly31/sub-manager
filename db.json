@@ -3,10 +3,10 @@
     {
       "id": "1vbkQwtJ0KTvUh6xly3p6",
       "name": "Уфанет",
-      "cost": 825,
+      "cost": 826,
       "period": 1,
-      "icon": "",
-      "activation_date": 1725908400006,
+      "icon": "https://sun9-70.userapi.com/impg/Igu6_UxNfPNR0im6P4YQV0YvoHLuOWUohUGTFA/QZXD8BHRJ8c.jpg?size=1000x1000&quality=95&sign=a9d371c3d859df6f9e615ef78f6e38ef&c_uniq_tag=8-41PTe96iunYj53-7yceP0ibCFir61fsMeg-8eGdrM&type=album",
+      "activation_date": 1725908400000,
       "created_at": 1726288496930
     },
     {
@@ -19,21 +19,12 @@
       "created_at": 1726288551472
     },
     {
-      "id": "OvJHmr0-FgiCqAo9u-n3w",
-      "name": "ВК Музыка",
-      "cost": 159,
-      "period": 1,
-      "icon": "https://st4.styapokupayu.ru/ckeditor_assets/pictures/000/531/521_content.png",
-      "activation_date": 1725908400004,
-      "created_at": 1726288592649
-    },
-    {
       "id": "sePAMxewVSqb1JinEFkxK",
       "name": "Телеграм Премиум",
       "cost": 299,
       "period": 1,
       "icon": "",
-      "activation_date": 1725908400003,
+      "activation_date": 1726167600000,
       "created_at": 1726299448595
     },
     {

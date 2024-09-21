@@ -3,7 +3,7 @@ import { nanoid } from "nanoid";
 import { ISub } from "../../models/ISub";
 import { useAddSubMutation } from "../../store/api/subsApi";
 import { inputs } from "./constants/inputs";
-import { getTimestamp } from "../../helpers/getTimeStamp";
+import { getTimestamp } from "../../helpers/getTimestamp";
 import { useState } from "react";
 
 type FormData = Omit<ISub, "id" | "created_at" | "activation_date"> & {
