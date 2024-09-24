@@ -3,7 +3,7 @@
     {
       "id": "1vbkQwtJ0KTvUh6xly3p6",
       "name": "Уфанет",
-      "cost": 900,
+      "cost": 826,
       "period": 1,
       "icon": "https://sun9-70.userapi.com/impg/Igu6_UxNfPNR0im6P4YQV0YvoHLuOWUohUGTFA/QZXD8BHRJ8c.jpg?size=1000x1000&quality=95&sign=a9d371c3d859df6f9e615ef78f6e38ef&c_uniq_tag=8-41PTe96iunYj53-7yceP0ibCFir61fsMeg-8eGdrM&type=album",
       "activation_date": 1725908400000,
@@ -53,21 +53,35 @@
       "icon": "https://allsks.ru/upload/iblock/0af/4q6dh3th9o5c1kehcb04rovyu3vgbai4.jpeg",
       "activation_date": 1726081200000,
       "created_at": 1726480744456
-    }
-  ],
-  "comments": [
-    {
-      "id": "1",
-      "text": "a comment about post 1",
-      "postId": "1"
     },
     {
-      "id": "2",
-      "text": "another comment about post 1",
-      "postId": "1"
+      "id": "EyTli2du18vYnIfvEsJ8m",
+      "name": "ВК Музыка",
+      "cost": 249,
+      "period": 2,
+      "icon": "",
+      "activation_date": 1726167600000,
+      "created_at": 1727187521071
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "patterns": [
+    {
+      "id": "EyTli2du18vYnIfvEsJ8m",
+      "name": "ВК Музыка",
+      "cost": 159,
+      "period": 1,
+      "icon": "",
+      "activation_date": 1725994800000,
+      "created_at": 1727187521071
+    },
+    {
+      "id": "2YZfMgeuhjb8nrjV7zhUt",
+      "name": "Мегафон",
+      "cost": 570,
+      "period": 1,
+      "icon": "",
+      "activation_date": 1727118000000,
+      "created_at": 1727187444158
+    }
+  ]
 }

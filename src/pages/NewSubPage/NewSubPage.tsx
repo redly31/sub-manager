@@ -6,6 +6,7 @@ import { getTimestamp } from "../../helpers/getTimestamp";
 import toast, { Toaster } from "react-hot-toast";
 import { Input } from "../../models/Input";
 import { FormData } from "../../models/Input";
+import Patterns from "../../components/Patterns/Patterns";
 
 export default function NewSubPage() {
   const { register, handleSubmit, reset } = useForm<FormData>();
@@ -50,6 +51,7 @@ export default function NewSubPage() {
         </button>
       </form>
       <Toaster position="bottom-center" reverseOrder={false}/>
+      <Patterns/>
     </div>
   );
 }

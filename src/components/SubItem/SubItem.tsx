@@ -1,11 +1,8 @@
 import { ISub } from "../../models/ISub";
-import { useDeleteSubMutation } from "../../store/api/subsApi";
 import { format } from "date-fns";
 import { Link } from "react-router-dom";
 
 export default function SubItem(sub: ISub) {
-  const [deleteSub] = useDeleteSubMutation();
-
   return (
     <Link to={`/${sub.id}`}>
       <div className="bg-secondary py-3 px-3 rounded-lg flex items-center justify-between h-20">
