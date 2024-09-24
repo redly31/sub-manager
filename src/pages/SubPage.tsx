@@ -1,25 +1,22 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useDeleteSubMutation, useGetSubsQuery } from "../store/api/subsApi";
+import { useDeleteSubMutation, useGetSubQuery } from "../store/api/subsApi";
 import { format } from "date-fns";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import NotFoundSub from "../components/NotFoundSub";
 
 export default function SubPage() {
-  const { data: subs = [] } = useGetSubsQuery(1);
-  const [deleteSub] = useDeleteSubMutation();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { id } = useParams();
+  const { data: sub, isLoading, error } = useGetSubQuery(id as string)
+  const [deleteSub] = useDeleteSubMutation();
+
   const removeSub = (id: string) => {
     deleteSub(id)
     navigate('/')
   }
-  const sub = subs.find((s) => s.id === id); //переделать
 
-  if (!sub) {
-    return (
-      <NotFoundSub/>
-    )
-  }
+  if (isLoading) return <h1>Загрузка...</h1>;
+  if (error || !sub) return <NotFoundSub />;
 
   return (
     <div className="bg-secondary py-3 px-3 rounded-lg flex items-start flex-col">

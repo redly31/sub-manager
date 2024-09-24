@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import NotFoundSub from "../components/NotFoundSub";
-import { useGetSubsQuery, useUpdateSubMutation } from "../store/api/subsApi";
+import { useGetSubQuery, useUpdateSubMutation } from "../store/api/subsApi";
 import { format } from "date-fns";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { getTimestamp } from "../helpers/getTimestamp";
@@ -10,15 +10,13 @@ import { FormData } from "../models/Input";
 import { inputs } from "./NewSubPage/constants/inputs";
 
 export default function EditSubPage() {
-  const { data: subs = [] } = useGetSubsQuery(1);
+  const { id } = useParams();
+  const { data: sub, isLoading, error } = useGetSubQuery(id as string)
   const { register, handleSubmit } = useForm<FormData>();
   const [ updateSub ] = useUpdateSubMutation();
-  const { id } = useParams();
-  const sub = subs.find((s) => s.id === id); //переделать
 
-  if (!sub) {
-    return <NotFoundSub />;
-  }
+  if (isLoading) return <h1>Загрузка...</h1>;
+  if (error || !sub) return <NotFoundSub />;
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     const timestamp = getTimestamp(data.activation_date);

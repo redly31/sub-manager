@@ -19,6 +19,10 @@ export const subsApi = createApi({
             ]
           : [{ type: "Subs", id: "LIST" }],
     }),
+    getSub: build.query<ISub, string>({
+      query: (id: string) => `subs/${id}`,
+      providesTags: (_result, _error, id) => [{ type: "Subs", id }],
+    }),
     addSub: build.mutation<ISub, ISub>({
       query: (body: ISub) => ({
         url: "subs",
@@ -45,4 +49,4 @@ export const subsApi = createApi({
   }),
 });
 
-export const { useGetSubsQuery, useAddSubMutation, useDeleteSubMutation, useUpdateSubMutation } = subsApi;
+export const { useGetSubsQuery, useAddSubMutation, useDeleteSubMutation, useUpdateSubMutation, useGetSubQuery } = subsApi;
