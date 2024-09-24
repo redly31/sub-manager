@@ -3,7 +3,7 @@
     {
       "id": "1vbkQwtJ0KTvUh6xly3p6",
       "name": "Уфанет",
-      "cost": 826,
+      "cost": 900,
       "period": 1,
       "icon": "https://sun9-70.userapi.com/impg/Igu6_UxNfPNR0im6P4YQV0YvoHLuOWUohUGTFA/QZXD8BHRJ8c.jpg?size=1000x1000&quality=95&sign=a9d371c3d859df6f9e615ef78f6e38ef&c_uniq_tag=8-41PTe96iunYj53-7yceP0ibCFir61fsMeg-8eGdrM&type=album",
       "activation_date": 1725908400000,
@@ -14,7 +14,7 @@
       "name": "Мегафон",
       "cost": 570,
       "period": 1,
-      "icon": "",
+      "icon": "https://avatars.mds.yandex.net/i?id=51aa9d2df639f9d00b3a9473a51ea31c_l-11005614-images-thumbs&n=13",
       "activation_date": 1725908400005,
       "created_at": 1726288551472
     },
@@ -23,7 +23,7 @@
       "name": "Телеграм Премиум",
       "cost": 299,
       "period": 1,
-      "icon": "",
+      "icon": "https://www.mixtcar.ru/upload/medialibrary/604/hww6m3mhk3a5tucuo799oo23ikc13h7s.png",
       "activation_date": 1726167600000,
       "created_at": 1726299448595
     },
@@ -32,36 +32,9 @@
       "name": "Яндекс плюс",
       "cost": 399,
       "period": 1,
-      "icon": "",
+      "icon": "https://digiseller.mycdn.ink/preview/828276/p1_4474668_4488317e.jpg",
       "activation_date": 1725908400002,
       "created_at": 1726130393000
-    },
-    {
-      "id": "tqzTEFD63hU5r9lXj8qk4",
-      "name": "Penis",
-      "cost": 149,
-      "period": 2,
-      "icon": "",
-      "activation_date": 1725908400001,
-      "created_at": 1726384047624
-    },
-    {
-      "id": "JEeYR9YVu9YnvO2aMkhIR",
-      "name": "Penis 2",
-      "cost": 149,
-      "period": 1,
-      "icon": "",
-      "activation_date": 1726340400000,
-      "created_at": 1726409892667
-    },
-    {
-      "id": "oXoa8vnc__q7lP-_tukpn",
-      "name": "Penis 3",
-      "cost": 269,
-      "period": 2,
-      "icon": "",
-      "activation_date": 1726254000000,
-      "created_at": 1726409988494
     },
     {
       "id": "6llZQcbTHEMqSKyk6qah8",
@@ -80,15 +53,6 @@
       "icon": "https://allsks.ru/upload/iblock/0af/4q6dh3th9o5c1kehcb04rovyu3vgbai4.jpeg",
       "activation_date": 1726081200000,
       "created_at": 1726480744456
-    },
-    {
-      "id": "azCKlGWO5y5WOrremrGyy",
-      "name": "Каспарян",
-      "cost": 149,
-      "period": 3,
-      "icon": "",
-      "activation_date": 1725649200000,
-      "created_at": 1726481238668
     }
   ],
   "comments": [

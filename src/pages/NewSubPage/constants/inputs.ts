@@ -1,4 +1,5 @@
-import { Input } from "../NewSubPage";
+import { Input } from "../../../models/Input";
+
 
 export const inputs: Input[] = [
     { name: "name", placeholder: "Название", required: true, id: 1, type: "text" },

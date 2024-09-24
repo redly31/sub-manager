@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useDeleteSubMutation, useGetSubsQuery } from "../store/api/subsApi";
 import { format } from "date-fns";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
@@ -7,7 +7,12 @@ import NotFoundSub from "../components/NotFoundSub";
 export default function SubPage() {
   const { data: subs = [] } = useGetSubsQuery(1);
   const [deleteSub] = useDeleteSubMutation();
+  const navigate = useNavigate();
   const { id } = useParams();
+  const removeSub = (id: string) => {
+    deleteSub(id)
+    navigate('/')
+  }
   const sub = subs.find((s) => s.id === id); //переделать
 
   if (!sub) {
@@ -35,7 +40,7 @@ export default function SubPage() {
                 <FaEdit />
               </div>
             </Link>
-            <div className="link-primary p-3" onClick={() => deleteSub(sub.id)}>
+            <div className="link-primary p-3" onClick={() => removeSub(sub.id)}>
             <FaTrashAlt />
             </div>
           </div>

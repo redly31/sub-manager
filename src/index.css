@@ -5,6 +5,7 @@
 :root {
   --theme-color: #d97706; /* Цвет amber-600 */
   --theme-color-hover: #92400e; /* Цвет amber-800 */
+  scrollbar-gutter: stable both-edges;
 }
 
 @layer components {

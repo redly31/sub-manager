@@ -24,7 +24,7 @@ export default function HomePage() {
       <h3>Траты в год: {totalCost * 12} ₽</h3>
       <h1 className="mt-2">Подписки ({subs.length})</h1>
       <SubBar setSortType={setSortType} setSortOrder={setSortOrder} sortType={sortType} />
-      <div className="flex flex-col mt-2 space-y-3">
+      <div className="flex flex-col mt-4 space-y-3">
         {sortedSubs?.map((sub: ISub) => (
           <SubItem {...sub} key={sub.id} />
         ))}

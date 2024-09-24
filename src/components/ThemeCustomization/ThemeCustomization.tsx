@@ -1,3 +1,4 @@
+import toast, { Toaster } from "react-hot-toast";
 import { useAppDispatch } from "../../hooks/redux";
 import { IColor } from "../../models/ITheme";
 import { setThemeColor } from "../../store/slices/themeSlice";
@@ -5,8 +6,10 @@ import { colorMap } from "./constants/colorMap";
 
 export default function ThemeCustomization() {
   const dispatch = useAppDispatch();
+  const notifySuccess = () => toast.success('Тема обновлена');
   const handleColorChange = (color: IColor) => {
     dispatch(setThemeColor(color));
+    notifySuccess()
   };
   return (
     <div className="mt-3">
@@ -22,6 +25,7 @@ export default function ThemeCustomization() {
           </button>
         ))}
       </div>
+      <Toaster position="bottom-center" reverseOrder={false}/>
     </div>
   );
 }

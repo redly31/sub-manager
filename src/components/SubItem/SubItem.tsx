@@ -1,4 +1,3 @@
-import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import { ISub } from "../../models/ISub";
 import { useDeleteSubMutation } from "../../store/api/subsApi";
 import { format } from "date-fns";
@@ -9,7 +8,7 @@ export default function SubItem(sub: ISub) {
 
   return (
     <Link to={`/${sub.id}`}>
-      <div className="bg-secondary py-3 px-3 rounded-lg flex items-center justify-between">
+      <div className="bg-secondary py-3 px-3 rounded-lg flex items-center justify-between h-20">
         <h3 className="flex items-center">
           {sub.icon !== "" && (
             <img
@@ -26,18 +25,6 @@ export default function SubItem(sub: ISub) {
             {format(sub.activation_date, "dd.MM.yy")} &mdash;{" "}
             {format(sub.activation_date + 2629743000 * sub.period, "dd.MM.yy")}
           </h3>
-          <Link to={`/${sub.id}/edit`}>
-            <div className="flex items-center space-x-2 link-primary p-3">
-              <FaEdit />
-            </div>
-          </Link>
-
-          <div
-            className="flex items-center space-x-2 link-primary p-3"
-            onClick={() => deleteSub(sub.id)}
-          >
-            <FaTrashAlt />
-          </div>
         </div>
       </div>
     </Link>
