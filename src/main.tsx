@@ -31,7 +31,7 @@ enum Routes {
 }
 
 const RootComponent = () => {
-  const isAuth = useAppSelector(state => state.auth.isAuth);
+  const isAuth = useAppSelector(state => state.auth.session);
 
   const publicRoutes: IRoute[] = [
     { path: Routes.HOME, element: <StarterPage /> },

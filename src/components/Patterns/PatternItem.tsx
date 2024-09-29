@@ -2,11 +2,12 @@ import { format } from "date-fns";
 import { ISub } from "../../models/ISub";
 import { useAddSubMutation } from "../../store/api/subsApi";
 import toast, { Toaster } from "react-hot-toast";
+import { nanoid } from "nanoid";
 
 export default function PatternItem(pattern: ISub) {
   const [addSub] = useAddSubMutation();
   const addNewSubFromPattern = () => {
-    addSub(pattern);
+    addSub({...pattern, id: nanoid()});
     notifySuccess()
   };
 

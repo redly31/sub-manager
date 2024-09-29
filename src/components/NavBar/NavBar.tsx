@@ -5,7 +5,7 @@ import { useAppSelector } from "../../hooks/redux";
 import { MdOutlineEventNote } from "react-icons/md";
 
 export default function NavBar() {
-  const isAuth = useAppSelector(state => state.auth.isAuth);
+  const isAuth = useAppSelector(state => state.auth.session);
   return (
     <div className="flex justify-between w-full py-3 items-center">
       {isAuth

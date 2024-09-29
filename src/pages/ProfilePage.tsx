@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../hooks/redux"
-import { logOut } from "../store/slices/authSlice"
+import { logOut } from "../store/slices/sessionSlice"
 import ThemeCustomization from "../components/ThemeCustomization/ThemeCustomization";
 
 export default function ProfilePage() {

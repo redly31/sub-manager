@@ -14,9 +14,12 @@ export default function EditSubPage() {
   const { data: sub, isLoading, error } = useGetSubQuery(id as string)
   const { register, handleSubmit } = useForm<FormData>();
   const [ updateSub ] = useUpdateSubMutation();
+  const notifySuccess = () => toast.success('Подписка обновлена');
 
   if (isLoading) return <h1>Загрузка...</h1>;
   if (error || !sub) return <NotFoundSub />;
+
+  const formatedDate = format(sub.activation_date, 'yyyy-MM-dd');
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     const timestamp = getTimestamp(data.activation_date);
@@ -32,9 +35,6 @@ export default function EditSubPage() {
     updateSub({newSub, id: sub.id})
     notifySuccess()
   };
-
-  const formatedDate = format(sub.activation_date, 'yyyy-MM-dd');
-  const notifySuccess = () => toast.success('Подписка обновлена');
 
   return (
     <div className="bg-secondary py-3 px-3 rounded-lg flex items-start flex-col">
