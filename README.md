@@ -10,9 +10,10 @@
   <li>Date-fns</li>
   <li>Redux-Toolkit</li>
   <li>React-Router-DOM</li>
+  <li>Nano-id</li>
   <li>JSON-Server</li>
   <li>React-Icons</li>
 </ul>
 <h3>Запуск сервера</h3>
 npx json-server db.json
-<h3>Архитектура Featured-Sliced-Design</h3>
+<h3>Без архитектуры</h3>
